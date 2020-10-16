@@ -5,6 +5,7 @@
     <title>Epam_FrontEnd_Training_Task</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -15,21 +16,33 @@
             <h3>Input form</h3>
             <div class="element-form">
                 <label>Name:</label>
-                <input type="text" placeholder="Enter name" title="Use only Latin letters">
+                <div>
+                    <input type="text" id="inputName" placeholder="Enter name" title="Use only Latin letters" required>
+                </div>
             </div>
             <div class="element-form">
                 <label>Password:</label>
-                <input type="password" placeholder="Enter password" title="The password must contain at least 8 characters. Only Latin letters and numbers">
+                <div>
+                    <input type="password" id="inputPassword" placeholder="Enter password" title="The password must contain at least 8 characters. Only Latin letters and numbers" required>
+                    <span class="material-icons" id="view">
+                        visibility
+                    </span>
+                </div>
             </div>
             <div class="element-form">
                 <label>E-mail:</label>
-                <input type="email" placeholder="e-mail@example.com">
+                <div>
+                    <input type="email" id="inputEmail" placeholder="e-mail@example.com" title="Enter correct e-mail" required>
+                </div>
             </div>
             <div class="button element-form">
                 <label></label>
-                <button>Submit</button>
+                <div>
+                    <button>Submit</button>
+                </div>
             </div>
         </div>
     </form>
+    <script src="js/script.js"></script>
 </body>
 </html>

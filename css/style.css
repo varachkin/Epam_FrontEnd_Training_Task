@@ -32,8 +32,15 @@ body{
     display: flex;
     align-items: center;
 }
-.element-form{
-
+.element-form div{
+    min-width: 450px;
+}
+.element-form div span{
+    position: relative;
+    left: -30px;
+}
+.element-form div span:hover{
+    cursor: pointer;
 }
 .element-form label{
     display: block;
@@ -58,7 +65,7 @@ input{
 input:focus{
     outline: 2px solid #a3c8ff;
 }
-@media (max-width: 600px){
+@media (max-width: 628px){
     .element-form{
         display: flex;
         flex-wrap: wrap;
