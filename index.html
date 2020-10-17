@@ -11,34 +11,43 @@
     <header class="header">
         <div>Epam FrontEnd Training Task</div>
     </header>
-    <form class="form" action="">
+    <form class="form" action="#" method="post">
         <div class="container">
+
             <h3>Input form</h3>
+
             <div class="element-form">
-                <label>Name:</label>
+                <label for="inputName">Name:</label>
                 <div>
-                    <input type="text" id="inputName" placeholder="Enter name" title="Use only Latin letters" required>
+                    <input type="text" id="inputName" placeholder="Enter name" title="Use only Latin letters"  autofocus>
+                    <span class="error erName">no value entered Name</span>
                 </div>
             </div>
+
             <div class="element-form">
-                <label>Password:</label>
+                <label for="inputPassword">Password:</label>
                 <div>
-                    <input type="password" id="inputPassword" placeholder="Enter password" title="The password must contain at least 8 characters. Only Latin letters and numbers" required>
+                    <input type="password" id="inputPassword" placeholder="Enter password" title="The password must contain at least 8 characters. Only Latin letters and numbers" >
                     <span class="material-icons" id="view">
                         visibility
                     </span>
+                    <span class="error erPassword">no value entered Password</span>
                 </div>
             </div>
+
             <div class="element-form">
-                <label>E-mail:</label>
+                <label for="inputEmail">E-mail:</label>
                 <div>
-                    <input type="email" id="inputEmail" placeholder="e-mail@example.com" title="Enter correct e-mail" required>
+                    <input type="email" id="inputEmail" placeholder="e-mail@example.com" title="Enter correct e-mail" >
+                    <span class="error erEmail">no value entered E-mail</span>
                 </div>
             </div>
+
             <div class="button element-form">
                 <label></label>
                 <div>
-                    <button>Submit</button>
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset">Reset</button>
                 </div>
             </div>
         </div>
