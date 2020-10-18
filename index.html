@@ -17,30 +17,28 @@
             <h3>Input form</h3>
 
             <div class="element-form">
-                <label for="inputName">Name:</label>
-                <div>
+                <label for="inputName" class="labelName">Name:</label>
+                <div class="element-input">
                     <input type="text" id="inputName" placeholder="Enter name" title="Use only Latin letters"  autofocus>
-                    <span class="error erName">no value entered Name</span>
                 </div>
+                <span class="error erName">Error message</span>
             </div>
 
             <div class="element-form">
-                <label for="inputPassword">Password:</label>
-                <div>
+                <label for="inputPassword" class="labelPassword">Password:</label>
+                <div class="element-input">
                     <input type="password" id="inputPassword" placeholder="Enter password" title="The password must contain at least 8 characters. Only Latin letters and numbers" >
-                    <span class="material-icons" id="view">
-                        visibility
-                    </span>
-                    <span class="error erPassword">no value entered Password</span>
+                    <span class="material-icons eye-icon" id="view">visibility</span>
                 </div>
+                <span class="error erPassword">Error message</span>
             </div>
 
             <div class="element-form">
-                <label for="inputEmail">E-mail:</label>
-                <div>
+                <label for="inputEmail" class="labelEmail">E-mail:</label>
+                <div class="element-input">
                     <input type="email" id="inputEmail" placeholder="e-mail@example.com" title="Enter correct e-mail" >
-                    <span class="error erEmail">no value entered E-mail</span>
                 </div>
+                <span class="error erEmail">Error message</span>
             </div>
 
             <div class="button element-form">
